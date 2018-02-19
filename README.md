@@ -1,5 +1,7 @@
 # lg-cli
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/soenkekluth/lg-cli.svg)](https://greenkeeper.io/)
+
 command line script like "ls" but using the glob pattern
 
 <https://github.com/mrmlnc/fast-glob>
