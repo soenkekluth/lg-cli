@@ -1,0 +1,56 @@
+{
+  "name": "lg-cli",
+  "version": "1.0.0",
+  "description": "command line script like \"ls\" but using the glob pattern",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "bin": {
+    "lg": "./src/cli.js",
+    "lg-cli": "./src/cli.js"
+  },
+  "files":["src"],
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lg": "./src/cli.js",
+    "lint": "eslint src",
+    "lint:fix": "lint --fix",
+    "start": "exec /usr/bin/env node --harmony ./src/cli.js",
+    "watch": "nodemon --exec npm run lg --watch ./src/**",
+    "--watch": "onchange ./index.js 'echo \"hans\"'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soenkekluth/lg-cli.git"
+  },
+  "keywords": [],
+  "author": "Sönke Kluth <soenke.kluth@gmail.com> (http://soenkekluth.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/soenkekluth/lg-cli/issues"
+  },
+  "homepage": "https://github.com/soenkekluth/lg-cli#readme",
+  "dependencies": {
+    "anymatch": "^2.0.0",
+    "chalk": "^2.3.1",
+    "cli-table": "^0.3.1",
+    "fast-glob": "^2.0.4",
+    "fs-extra": "^5.0.0",
+    "glob-fs": "^0.1.7",
+    "has-glob": "^1.0.0",
+    "is-glob": "^4.0.0",
+    "is-valid-glob": "^1.0.0",
+    "micromatch": "^3.1.6",
+    "pretty-bytes": "^4.0.2",
+    "sade": "^1.3.2"
+  },
+  "devDependencies": {
+    "eslint": "^4.18.0",
+    "eslint-plugin-node": "^6.0.0",
+    "fs-onchange": "^1.1.1",
+    "microbundle": "^0.4.3",
+    "nodemon": "^1.15.0",
+    "prettier": "^1.10.2"
+  }
+}
